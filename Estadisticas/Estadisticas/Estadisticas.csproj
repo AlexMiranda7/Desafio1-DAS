@@ -63,8 +63,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="USCEntretenimiento.xaml.cs">
+      <DependentUpon>USCEntretenimiento.xaml</DependentUpon>
+    </Compile>
     <Compile Include="USCInicio.xaml.cs">
       <DependentUpon>USCInicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCLenguajes.xaml.cs">
+      <DependentUpon>USCLenguajes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCLibros.xaml.cs">
+      <DependentUpon>USCLibros.xaml</DependentUpon>
     </Compile>
     <Page Include="InPanel.xaml">
       <SubType>Designer</SubType>
@@ -85,7 +94,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="USCEntretenimiento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="USCInicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCLenguajes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCLibros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

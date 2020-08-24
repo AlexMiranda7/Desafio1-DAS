@@ -52,9 +52,26 @@ namespace Estadisticas
             switch (index)
             {
                 case 0:
+
                     GridInPanel.Children.Clear();
                     GridInPanel.Children.Add(new USCInicio());
                     break;
+
+                case 1:
+                    GridInPanel.Children.Clear();
+                    GridInPanel.Children.Add(new USCEntretenimiento());
+                    break;
+
+                case 2:
+                    GridInPanel.Children.Clear();
+                    GridInPanel.Children.Add(new USCLibros());
+                    break;
+
+                case 3:
+                    GridInPanel.Children.Clear();
+                    GridInPanel.Children.Add(new USCLenguajes());
+                    break;
+
                 default:
                     break;
             }

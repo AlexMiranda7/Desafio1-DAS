@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Estadisticas.USCEntretenimiento"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Estadisticas"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" d:DesignWidth="525">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="etiqueta" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="520" Width="175" Margin="0,0,87,0">
+                    <ListView x:Name="lstserie" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine">
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Axe" Margin="5" />
+                                <TextBlock Text="Game of Thrones" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Radioactive" Margin="5" />
+                                <TextBlock Text="Chernobyl" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="FaceWoman" Margin="5" />
+                                <TextBlock Text="The Marvelous" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Column="1" Height="520" Width="350">
+                    
+                </Grid>
+            </Grid>
+            
+        </materialDesign:TransitioningContent>
+       
+      
+        
+    </Grid>
+        
+</UserControl>

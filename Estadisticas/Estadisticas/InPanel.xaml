@@ -33,7 +33,7 @@
             <materialDesign:TransitioningContent x:Name="etiqueta" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
                 <Grid x:Name="GridEtiqueta" Margin="0 75 0 290" Background="#33ffb5" Height="30" Width="10" HorizontalAlignment="Left"  />
             </materialDesign:TransitioningContent>
-            <ListView x:Name="lstmenu" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstmenu_SelectionChanged">
+            <ListView x:Name="lstmenu" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstmenu_SelectionChanged" SelectedItem="0">
                 <ListViewItem>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="HomeAccount" Margin="5" />
