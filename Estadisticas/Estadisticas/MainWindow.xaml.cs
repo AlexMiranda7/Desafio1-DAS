@@ -53,35 +53,6 @@ namespace Estadisticas
                 txtusuario.Clear();
                 pst.Clear();
             }
-            
-            /*int j;
-            for (j = 0; j < 5; j++)
-            {
-                if (txtusuario.Text != login[0, j] && pst.Password != login[1, j])
-                {
-                    j++;
-                }
-                if (txtusuario.Text == login[0, j] && pst.Password == login[1, j])
-                {
-                    this.Hide();
-                    InPanel i = new InPanel();
-                    i.Show(); break;
-                }
-                if (intentos == 3)
-                {
-                    MessageBox.Show("Has alcanzado el numero maximo de intentos, cerrando sistema", "Mensaje del sistema", MessageBoxButton.OK, MessageBoxImage.Error);
-                    Application.Current.Shutdown();
-                }
-                else
-                {
-                    intentos++;
-                    MessageBox.Show("Error de autenticacion, verifique usuario y/O contraseña ó es posible que su cuenta este inhabilitada", "Mensaje del sistema", MessageBoxButton.OK, MessageBoxImage.Information);
-                    txtusuario.Clear();
-                    pst.Clear();
-                    break;
-                }
-
-            }         */
 
         }
     }
