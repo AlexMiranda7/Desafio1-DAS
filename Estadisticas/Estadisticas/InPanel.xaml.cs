@@ -83,5 +83,11 @@ namespace Estadisticas
             GridEtiqueta.Margin = new Thickness(0,(75 +( 42* index)),0,(290-(42 * index)));
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow i = new MainWindow();
+            i.Show();
+        }
     }
 }

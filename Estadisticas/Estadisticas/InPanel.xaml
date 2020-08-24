@@ -13,7 +13,7 @@
             <Grid Background="#33ffb5" Height="10" MouseDown="Grid_MouseDown"/>
             <Grid Margin="5">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
-                <Button Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Gray">
+                <Button Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Gray" Click="Button_Click">
                     <materialDesign:PackIcon Kind="Settings"/>
                 </Button>
                 <Button x:Name="btnoff" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Gray" Click="btnoff_Click">

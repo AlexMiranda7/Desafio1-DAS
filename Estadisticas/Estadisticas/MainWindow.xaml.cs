@@ -20,11 +20,11 @@ namespace Estadisticas
     /// </summary>
     public partial class MainWindow : Window
     {
-        string[,] login = { { "rmiranda", "rvillalta" }, {"$3nt!n3la","ingreso20" } };
+        string[,] login = { { "rmiranda", "rvillalta","test" }, {"$3nt!n3la","ingreso20","1020304050" } };
         int intentos = 0;
         public MainWindow()
         {
-            System.Threading.Thread.Sleep(300);
+            System.Threading.Thread.Sleep(300); /*Corregir a 15000 antes de entregar*/
             InitializeComponent();
         }
 
@@ -35,8 +35,27 @@ namespace Estadisticas
 
         private void btningresar_Click(object sender, RoutedEventArgs e)
         {
-            int j;
-            for (j = 0; j < 4; j++)
+            string[] Usuario = {"rmiranda","rvillalta","test","prueba","Valhala" };
+            string[] Pass = { "rm#2019", "rv#2020", "1020304050", "12345", "odin" };
+            int intentos = 0;
+
+            if (Usuario.Contains(txtusuario.Text) && Pass.Contains(pst.Password) && Array.IndexOf(Usuario,txtusuario.Text) == Array.IndexOf(Pass,pst.Password))
+            {
+                this.Hide();
+                InPanel i = new InPanel();
+                i.Show(); 
+            }
+            
+            else
+            {
+                intentos++;
+                MessageBox.Show("Error de autenticacion, verifique usuario y/O contraseña ó es posible que su cuenta este inhabilitada", "Mensaje del sistema", MessageBoxButton.OK, MessageBoxImage.Information);
+                txtusuario.Clear();
+                pst.Clear();
+            }
+            
+            /*int j;
+            for (j = 0; j < 5; j++)
             {
                 if (txtusuario.Text != login[0, j] && pst.Password != login[1, j])
                 {
@@ -51,6 +70,7 @@ namespace Estadisticas
                 if (intentos == 3)
                 {
                     MessageBox.Show("Has alcanzado el numero maximo de intentos, cerrando sistema", "Mensaje del sistema", MessageBoxButton.OK, MessageBoxImage.Error);
+                    Application.Current.Shutdown();
                 }
                 else
                 {
@@ -61,8 +81,8 @@ namespace Estadisticas
                     break;
                 }
 
-            }            
-          
+            }         */
+
         }
     }
 }
