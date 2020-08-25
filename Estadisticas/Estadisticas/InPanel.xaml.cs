@@ -85,9 +85,18 @@ namespace Estadisticas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            MainWindow i = new MainWindow();
-            i.Show();
+            MessageBoxResult cierre = MessageBox.Show("¿Esta seguro de cerrar sesión?", "Cerrar sesión", MessageBoxButton.YesNo);
+            if (cierre == MessageBoxResult.Yes)
+            {
+                this.Hide();
+                MainWindow i = new MainWindow();
+                i.Show();
+            }
+            else
+            {
+
+            }
+            
         }
     }
 }
