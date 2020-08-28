@@ -20,11 +20,11 @@ namespace Estadisticas
     /// </summary>
     public partial class MainWindow : Window
     {
-        string[,] login = { { "rmiranda", "rvillalta","test" }, {"$3nt!n3la","ingreso20","1020304050" } };
-        int intentos = 0;
+        
+        
         public MainWindow()
         {
-            System.Threading.Thread.Sleep(300); /*Corregir a 15000 antes de entregar*/
+            System.Threading.Thread.Sleep(15000); /*Corregir a 15000 antes de entregar*/
             InitializeComponent();
         }
 
