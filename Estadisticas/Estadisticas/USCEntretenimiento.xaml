@@ -15,7 +15,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0" Height="520" Width="175" Margin="0,0,87,0">
-                    <ListView x:Name="lstserie" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine">
+                    <ListView x:Name="lstserie" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstserie_SelectionChanged">
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Axe" Margin="5" />
@@ -37,14 +37,19 @@
                     </ListView>
                 </Grid>
                 <Grid Grid.Column="1" Height="520" Width="350">
-                    
+
                 </Grid>
             </Grid>
             
         </materialDesign:TransitioningContent>
-       
-      
-        
+        <!--Se crea grid donde se mostrara la informacion, en este caso se nombra GridInPanelSecondary-->
+        <!--Importante colocar etiqueta x:Name con el nombre para poder llamar luego este espacio-->
+        <Grid Margin="175 0 0 0"> <!--Se deja un margen de 175 a la izq. pues es el ancho del menu-->
+            <Grid x:Name="GridInPanelSecondary" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+
+
     </Grid>
         
 </UserControl>

@@ -63,6 +63,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="USCD-Chernobyl.xaml.cs">
+      <DependentUpon>USCD-Chernobyl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-GOT.xaml.cs">
+      <DependentUpon>USCD-GOT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-TMS.xaml.cs">
+      <DependentUpon>USCD-TMS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="USCEntretenimiento.xaml.cs">
       <DependentUpon>USCEntretenimiento.xaml</DependentUpon>
     </Compile>
@@ -94,6 +103,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="USCD-Chernobyl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-GOT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-TMS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="USCEntretenimiento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
