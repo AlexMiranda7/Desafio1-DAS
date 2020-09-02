@@ -24,7 +24,7 @@ namespace Estadisticas
         
         public MainWindow()
         {
-            System.Threading.Thread.Sleep(15000); /*Corregir a 15000 antes de entregar*/
+            System.Threading.Thread.Sleep(1500); /*Corregir a 15000 antes de entregar*/
             InitializeComponent();
         }
 

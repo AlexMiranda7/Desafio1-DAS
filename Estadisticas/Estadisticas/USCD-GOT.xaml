@@ -13,7 +13,13 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Pajistica de Games of Thrones" Margin="50"/>
+                <TextBlock  x:Name="Titulo" Margin="10,-61,211,161"/>
+                <TextBlock  x:Name="Creador" Margin="144,-60,8,160"/>
+                <TextBlock  x:Name="Protagonistas" Margin="10,-34,17,102" TextWrapping="Wrap"/>
+                <TextBlock  x:Name="Pais" Margin="10,36,172,64"/>
+                <TextBlock  x:Name="Temporadas" Margin="183,36,90,64"/>
+                <TextBlock  x:Name="Episodios" Margin="268,36,5,64"/>
+                <TextBlock  x:Name="Sinopsis" TextWrapping="Wrap" Margin="10,62,5,-7"/>
             </Grid>
             
         </materialDesign:TransitioningContent>

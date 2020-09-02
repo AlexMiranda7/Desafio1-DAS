@@ -13,7 +13,13 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Pajistica de The Marvelous" Margin="50"/>
+                <TextBlock  x:Name="Titulo" Margin="10,-71,90,171"/>
+                <TextBlock  x:Name="Creador" Margin="10,-50,90,150"/>
+                <TextBlock  x:Name="Protagonistas" Margin="10,-29,17,111" TextWrapping="Wrap"/>
+                <TextBlock  x:Name="Pais" Margin="10,16,172,84"/>
+                <TextBlock  x:Name="Temporadas" Margin="183,17,90,83"/>
+                <TextBlock  x:Name="Episodios" Margin="268,16,5,84"/>
+                <TextBlock  x:Name="Sinopsis" TextWrapping="Wrap" Margin="10,43,5,20"/>
             </Grid>
 
         </materialDesign:TransitioningContent>
