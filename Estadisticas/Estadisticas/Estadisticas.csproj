@@ -69,8 +69,26 @@
     <Compile Include="USCD-GOT.xaml.cs">
       <DependentUpon>USCD-GOT.xaml</DependentUpon>
     </Compile>
+    <Compile Include="USCD-Java.xaml.cs">
+      <DependentUpon>USCD-Java.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-JS.xaml.cs">
+      <DependentUpon>USCD-JS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="USCD-TMS.xaml.cs">
       <DependentUpon>USCD-TMS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-Goose.xaml.cs">
+      <DependentUpon>USCD-Goose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-HPotter.xaml.cs">
+      <DependentUpon>USCD-HPotter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-PerryMason.xaml.cs">
+      <DependentUpon>USCD-PerryMason.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-Python.xaml.cs">
+      <DependentUpon>USCD-Python.xaml</DependentUpon>
     </Compile>
     <Compile Include="USCEntretenimiento.xaml.cs">
       <DependentUpon>USCEntretenimiento.xaml</DependentUpon>
@@ -111,7 +129,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="USCD-Java.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-JS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="USCD-TMS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-Goose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-HPotter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-PerryMason.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-Python.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
