@@ -24,5 +24,32 @@ namespace Estadisticas
         {
             InitializeComponent();
         }
+        private void lstlibros_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            /*Se crea variable que identifique la seleccion*/
+            int index = lstlibros.SelectedIndex;
+
+            /*Se crean los casos de lo que se mostrar en el InPanelSecondary segun la seleccion*/
+            switch (index)
+            {
+                case 0:
+                    GridInPanelSecondary.Children.Clear(); /*Se limpia el stack secundario*/
+                    GridInPanelSecondary.Children.Add(new USCDHPotter()); /*Se llama a la otra pestaña, en este caso USCD-GOT*/
+                    break;
+
+                case 1:
+                    GridInPanelSecondary.Children.Clear();
+                    GridInPanelSecondary.Children.Add(new USCDGoose());
+                    break;
+
+                case 2:
+                    GridInPanelSecondary.Children.Clear();
+                    GridInPanelSecondary.Children.Add(new USCDPerryMason());
+                    break;
+
+                default:
+                    break;
+            }
+        }
     }
 }

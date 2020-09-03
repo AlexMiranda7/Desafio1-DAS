@@ -5,8 +5,23 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Estadisticas"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" d:DesignWidth="350">
     <Grid>
-            
+        <materialDesign:TransitioningContent x:Name="etiqueta" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="Titulo" Margin="10,-20,189,120"/>
+                <TextBlock  x:Name="Autor" Margin="188,-20,10,120"/>
+                <TextBlock  x:Name="Protagonistas" Margin="10,6,10,99" TextWrapping="Wrap" />
+                <TextBlock  x:Name="Antagonistas" Margin="10,27,17,73" />
+                <TextBlock  x:Name="Genero" Margin="10,48,189,52"/>
+                <TextBlock  x:Name="Subgeneros" Margin="168,48,10,52" />
+                <TextBlock  x:Name="Sinopsis" TextWrapping="Wrap" Margin="10,69,5,3" />
+            </Grid>
+
+        </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>

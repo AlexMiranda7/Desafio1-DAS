@@ -15,7 +15,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0" Height="520" Width="175" Margin="0,0,87,0">
-                    <ListView x:Name="lstlibros" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine">
+                    <ListView x:Name="lstlenguajes" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstlenguajes_SelectionChanged">
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="LanguagePython" Margin="5" />
@@ -42,5 +42,10 @@
             </Grid>
 
         </materialDesign:TransitioningContent>
+        <Grid Margin="175 0 0 0">
+            <!--Se deja un margen de 175 a la izq. pues es el ancho del menu-->
+            <Grid x:Name="GridInPanelSecondary" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
     </Grid>
 </UserControl>
