@@ -72,6 +72,12 @@
     <Compile Include="USCD-Chernobyl.xaml.cs">
       <DependentUpon>USCD-Chernobyl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="USCD-EstadisticasLenguajes.xaml.cs">
+      <DependentUpon>USCD-EstadisticasLenguajes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-EstadisticasLibros.xaml.cs">
+      <DependentUpon>USCD-EstadisticasLibros.xaml</DependentUpon>
+    </Compile>
     <Compile Include="USCD-GOT.xaml.cs">
       <DependentUpon>USCD-GOT.xaml</DependentUpon>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <Compile Include="USCD-JS.xaml.cs">
       <DependentUpon>USCD-JS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USCD-EstadisticasEntretenimiento.xaml.cs">
+      <DependentUpon>USCD-EstadisticasEntretenimiento.xaml</DependentUpon>
     </Compile>
     <Compile Include="USCD-TMS.xaml.cs">
       <DependentUpon>USCD-TMS.xaml</DependentUpon>
@@ -134,6 +143,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="USCD-EstadisticasLenguajes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="USCD-EstadisticasLibros.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="USCD-GOT.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +162,10 @@
     <Page Include="USCD-JS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USCD-EstadisticasEntretenimiento.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="USCD-TMS.xaml">
       <SubType>Designer</SubType>

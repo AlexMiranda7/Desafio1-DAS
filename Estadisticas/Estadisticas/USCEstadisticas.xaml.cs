@@ -35,17 +35,17 @@ namespace Estadisticas
             {
                 case 0:
                     GridInPanelSecondary.Children.Clear(); /*Se limpia el stack secundario*/
-                    GridInPanelSecondary.Children.Add(new USCD_GOT()); /*Se llama a la otra pestaña, en este caso USCD-GOT*/
+                    GridInPanelSecondary.Children.Add(new USCDEstadisticasEstretenimiento()); /*Se llama a la otra pestaña, en este caso USCD-GOT*/
                     break;
 
                 case 1:
                     GridInPanelSecondary.Children.Clear();
-                    GridInPanelSecondary.Children.Add(new USCD_Chernobyl());
+                    GridInPanelSecondary.Children.Add(new USCDEstadisticasLibros());
                     break;
 
                 case 2:
                     GridInPanelSecondary.Children.Clear();
-                    GridInPanelSecondary.Children.Add(new USCD_TMS());
+                    GridInPanelSecondary.Children.Add(new USCDEstadisticasLenguages());
                     break;
 
                 default:
