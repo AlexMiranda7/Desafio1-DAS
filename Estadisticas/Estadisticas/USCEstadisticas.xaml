@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Estadisticas.USCEstadisticas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Estadisticas"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" d:DesignWidth="525">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="etiqueta" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="520" Width="175" Margin="0,0,87,0">
+                    <ListView x:Name="lstserie" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstserie_SelectionChanged">
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Tv" Margin="5" />
+                                <TextBlock Text="Entretenimiento" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Book" Margin="5" />
+                                <TextBlock Text="Libros" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="LanguageJavascript" Margin="5" />
+                                <TextBlock Text="Lenguajes" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Column="1" Height="520" Width="350">
+
+                </Grid>
+            </Grid>
+            
+        </materialDesign:TransitioningContent>
+        <!--Se crea grid donde se mostrara la informacion, en este caso se nombra GridInPanelSecondary-->
+        <!--Importante colocar etiqueta x:Name con el nombre para poder llamar luego este espacio-->
+        <Grid Margin="175 0 0 0"> <!--Se deja un margen de 175 a la izq. pues es el ancho del menu-->
+            <Grid x:Name="GridInPanelSecondary" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+
+
+    </Grid>
+        
+</UserControl>
