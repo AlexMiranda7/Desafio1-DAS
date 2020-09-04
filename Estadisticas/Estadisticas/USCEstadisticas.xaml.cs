@@ -29,6 +29,7 @@ namespace Estadisticas
         {
             /*Se crea variable que identifique la seleccion*/
             int index = lstserie.SelectedIndex;
+            MoveEtiquetaMenu(index); /*Permite identificar la seleccion para utlizarse en el marcador*/
 
             /*Se crean los casos de lo que se mostrar en el InPanelSecondary segun la seleccion*/
             switch (index)
@@ -51,6 +52,11 @@ namespace Estadisticas
                 default:
                     break;
             }
+        }
+        private void MoveEtiquetaMenu(int index)
+        {
+            eti.OnApplyTemplate();
+            GridEti.Margin = new Thickness(0, (25 + (42 * index)), 0, (340 - (42 * index)));
         }
     }
 }

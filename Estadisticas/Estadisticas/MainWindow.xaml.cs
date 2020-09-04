@@ -24,7 +24,7 @@ namespace Estadisticas
         
         public MainWindow()
         {
-            System.Threading.Thread.Sleep(1500); /*Corregir a 15000 antes de entregar*/
+            System.Threading.Thread.Sleep(15000); /*Corregir a 15000 antes de entregar*/
             InitializeComponent();
         }
 
@@ -35,7 +35,7 @@ namespace Estadisticas
 
         private void btningresar_Click(object sender, RoutedEventArgs e)
         {
-            string[] Usuario = {"rmiranda","rvillalta","kmedrano","prueba","Valhala" };
+            string[] Usuario = {"rmiranda","rvillalta","kmedrano","nbukele","ragnar" };
             string[] Pass = { "rm#2019", "rv#2020", "km#2020", "12345", "odin" };
             int intentos = 0;
 
