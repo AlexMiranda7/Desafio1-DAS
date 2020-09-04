@@ -15,6 +15,9 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0" Height="520" Width="175" Margin="0,0,87,0">
+                    <materialDesign:TransitioningContent x:Name="eti" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                        <Grid x:Name="GridEti" Margin="0 25 0 340" Background="#33ffb5" Height="30" Width="10" HorizontalAlignment="Left"  />
+                    </materialDesign:TransitioningContent>
                     <ListView x:Name="lstlibros" Margin="0,75" FontSize="16" FontFamily="Champagne &amp; Limousine" SelectionChanged="lstlibros_SelectionChanged">
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">

@@ -22,6 +22,9 @@ namespace Estadisticas
         public InPanel()
         {
             InitializeComponent();
+            GridInPanel.Children.Clear();
+            GridInPanel.Children.Add(new USCInicio());
+            
         }
 
         private void btnoff_Click(object sender, RoutedEventArgs e)

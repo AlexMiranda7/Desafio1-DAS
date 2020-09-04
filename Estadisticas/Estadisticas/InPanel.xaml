@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
 
-        Title="InPanel" Height="400" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+        Title="InPanel" Height="400" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Icon="Recursos/nave.png">
     <Grid Background="White">
         <StackPanel>
             <Grid Background="#33ffb5" Height="10" MouseDown="Grid_MouseDown"/>

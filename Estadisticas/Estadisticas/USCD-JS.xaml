@@ -13,7 +13,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock  x:Name="Desarroladores" Margin="0,-55,10,155"/>
+                <TextBlock  x:Name="Desarroladores" Margin="0,-55,10,155" FontWeight="Bold"/>
                 <TextBlock  x:Name="Extensiones" Margin="0,-29,10,129"/>
                 <TextBlock  x:Name="Aparecio" Margin="0,-3,10,108" TextWrapping="Wrap" />
                 <TextBlock  x:Name="OS" Margin="0,18,10,82" />

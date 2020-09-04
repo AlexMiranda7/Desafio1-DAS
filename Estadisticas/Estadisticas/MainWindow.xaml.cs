@@ -35,8 +35,8 @@ namespace Estadisticas
 
         private void btningresar_Click(object sender, RoutedEventArgs e)
         {
-            string[] Usuario = {"rmiranda","rvillalta","test","prueba","Valhala" };
-            string[] Pass = { "rm#2019", "rv#2020", "1020304050", "12345", "odin" };
+            string[] Usuario = {"rmiranda","rvillalta","kmedrano","prueba","Valhala" };
+            string[] Pass = { "rm#2019", "rv#2020", "km#2020", "12345", "odin" };
             int intentos = 0;
 
             if (Usuario.Contains(txtusuario.Text) && Pass.Contains(pst.Password) && Array.IndexOf(Usuario,txtusuario.Text) == Array.IndexOf(Pass,pst.Password))

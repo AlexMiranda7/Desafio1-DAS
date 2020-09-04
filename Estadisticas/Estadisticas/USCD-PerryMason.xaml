@@ -13,7 +13,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock  x:Name="Titulo" Margin="10,-20,189,120"/>
+                <TextBlock  x:Name="Titulo" Margin="10,-20,189,120" FontWeight="Bold"/>
                 <TextBlock  x:Name="Autor" Margin="188,-20,10,120"/>
                 <TextBlock  x:Name="Protagonistas" Margin="10,6,10,99" TextWrapping="Wrap" />
                 <TextBlock  x:Name="Antagonistas" Margin="10,27,17,73" />
