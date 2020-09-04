@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace Estadisticas
 {
@@ -24,6 +26,11 @@ namespace Estadisticas
         public USCDEstadisticasLenguages()
         {
             InitializeComponent();
+            myPieChart.Series.Add(new LiveCharts.Wpf.PieSeries { Title = "Python", Fill = Brushes.Chocolate, StrokeThickness = 0, Values = new ChartValues<double> { 47.0 } });
+            myPieChart.Series.Add(new LiveCharts.Wpf.PieSeries { Title = "Java", Fill = Brushes.DarkSeaGreen, StrokeThickness = 0, Values = new ChartValues<double> { 38.0 } });
+            myPieChart.Series.Add(new LiveCharts.Wpf.PieSeries { Title = "Javascript", Fill = Brushes.Azure, StrokeThickness = 0, Values = new ChartValues<double> { 15.0 } });
+
+            DataContext = this;
         }
     }
 }

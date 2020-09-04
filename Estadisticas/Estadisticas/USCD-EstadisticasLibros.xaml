@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Estadisticas"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              Height="auto" d:DesignWidth="350">
     <Grid>
         <materialDesign:TransitioningContent x:Name="etiqueta" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
@@ -13,7 +14,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock  Text="Estadisticas Libros" Margin="10,48,10,52" FontWeight="Bold"/>
+                <lvc:PieChart x:Name="myPieChart" StartingRotationAngle="0" Height="250" Width="250" VerticalAlignment="Top" Margin="49,-118,51,0"/>
             </Grid>
 
         </materialDesign:TransitioningContent>
