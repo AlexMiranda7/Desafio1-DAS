@@ -62,7 +62,7 @@ namespace Estadisticas
 
                 case 1:
                     GridInPanel.Children.Clear();
-                    GridInPanel.Children.Add(new USCEstadisticas());
+                    GridInPanel.Children.Add(new USCEntretenimiento());
                     break;
 
                 case 2:
